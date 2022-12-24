@@ -1,0 +1,24 @@
+﻿<Window x:Class="Pawnner.Operations"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pawnner"
+        mc:Ignorable="d"
+        Title="Operations" Height="720" Width="1080">
+    <Grid>
+        <Frame x:Name="OperationFrame" Margin="268,0,10,0"/>
+        <StackPanel x:Name="Operations1" Margin="268,0,10,0"/>
+        <StackPanel Margin="0,0,802,0" Width="278" Background="#FF131724">
+            <Image Height="125" Width="167" Source="/pawnner-logo.png"/>
+            <Label Content="Home" Padding="20,5,24,5" FontFamily="Sans Serif Collection" FontSize="25" Foreground="White" MouseDown="Home"/>
+            <Label Content="Add Customer" Padding="20,5,24,5" FontFamily="Sans Serif Collection" FontSize="25" Foreground="White" MouseDown="AddCustomer"/>
+            <Label Padding="20,5,24,5" FontFamily="Sans Serif Collection" FontSize="25" Foreground="White"/>
+            <Label Content="Customer History" Padding="20,5,24,5" FontFamily="Sans Serif Collection" FontSize="25" Foreground="White" MouseDown="customerHistory"/>
+            <Label Content="Add Item" Padding="20,5,24,5" FontFamily="Sans Serif Collection" FontSize="25" Foreground="White" MouseDown="addItem"/>
+            <Label Content="Print Bill" Padding="20,5,24,5" FontFamily="Sans Serif Collection" FontSize="25" Foreground="White" MouseDown="printBill"/>
+            <Label Content="Log Out" Padding="20,5,24,5" FontFamily="Sans Serif Collection" FontSize="25" Foreground="White" MouseDown="logout"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

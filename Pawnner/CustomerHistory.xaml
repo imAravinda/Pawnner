@@ -1,0 +1,32 @@
+﻿<Page x:Class="Pawnner.CustomerHistory"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Pawnner"
+      mc:Ignorable="d" 
+      d:DesignHeight="706" d:DesignWidth="802"
+      Title="CustomerHistory"  Width="802" Height="706">
+
+    <Grid Background="White">
+        <Image HorizontalAlignment="Left" Height="706" Margin="0,0,0,0" VerticalAlignment="Top" Width="802" Source="/pawnner-logo.png" Stretch="Fill" Opacity="0.2"/>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Width="782" Height="550" Background="{x:Null}" FontFamily="Sans Serif Collection" BorderBrush="{x:Null}">
+            <DataGrid.RowBackground>
+                <ImageBrush/>
+            </DataGrid.RowBackground>
+            <DataGrid.Columns>
+                <DataGridTextColumn FontFamily="Sans Serif Collection" Header="NIC" Width="96"/>
+                <DataGridTextColumn FontFamily="Sans Serif Collection" Header="Name" Width="148"/>
+                <DataGridTextColumn FontFamily="Sans Serif Collection" Header="Item" Width="100"/>
+                <DataGridTextColumn FontFamily="Sans Serif Collection" Header="Amount" Width="64"/>
+                <DataGridTextColumn FontFamily="Sans Serif Collection" Header="Rate" Width="64"/>
+                <DataGridTextColumn Header="Payable Amount" Width="70" FontSize="8" FontFamily="Sans Serif Collection"/>
+                <DataGridTextColumn Header="Address" Width="230"/>
+            </DataGrid.Columns>
+            <DataGrid.ColumnHeaderStyle>
+                <Style/>
+            </DataGrid.ColumnHeaderStyle>
+        </DataGrid>
+
+    </Grid>
+</Page>

@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Artboard – 1.png" />
+    <None Remove="coverImage.png" />
+    <None Remove="pawnner-logo.png" />
+    <None Remove="pngtree-white-search-icon-image_1344885-removebg-preview.png" />
+    <None Remove="printer-icon-dark-background-simple-vector-116897421-removebg-preview.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Artboard – 1.png" />
+    <Resource Include="Images\Artboard – 1.png" />
+    <Resource Include="Images\coverImage.png" />
+    <Resource Include="Images\pawnner-logo.png" />
+    <Resource Include="pawnner-logo.png" />
+    <Resource Include="pngtree-white-search-icon-image_1344885-removebg-preview.png" />
+    <Resource Include="printer-icon-dark-background-simple-vector-116897421-removebg-preview.png" />
+  </ItemGroup>
+
+</Project>
